@@ -1,25 +1,24 @@
 {
-  "name": "team-selector",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
-  },
+  "name": "example-create-react-app-express",
+  "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "cd client && npm start",
+    "server": "node server.js",
+    "start": "npm run client",
+    "start-server": "npm run server"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "ts-trueskill": "2.4.2",
+    "fs-extra": "7.0.1",
+    "lodash": "4.17.11",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.7",
+    "fast-glob": "2.2.6"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "1.18.11"
+  }
 }
